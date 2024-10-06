@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation | The first project</title>
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="" class="form" target="_blank">
+        <h2 class="main-heading">Register now</h2>
+        <div class="form-controller form-controller--username">
+          <label class="form-label" for="username">User name</label>
+          <input type="text" id="username" class="input  input--username" name="username" placeholder="Enter your name"
+            autofocus>
+          <small class="error-message">Error message</small>
+        </div>
+        <div class="form-controller form-controller--email">
+          <label class="form-label" for="email">User email</label>
+          <input type="email" id="email" class="input  input--email" name="email" placeholder="Enter invalid email">
+          <small class="error-message">Error message</small>
+        </div>
+        <div class="form-controller form-controller--password">
+          <label class="form-label" for="password">Password</label>
+          <input type="password" id="password" class="input  input--password" name="password"
+            placeholder="Enter stronge password">
+          <small class="error-message">Error message</small>
+        </div>
+        <div class="form-controller form-controller--repassword">
+          <label class="form-label" for="repassword">Confirm password</label>
+          <input type="password" id="repassword" class="input  input--repassword" name="repassword"
+            placeholder="Renter your password">
+          <small class="error-message">Error message</small>
+        </div>
+        <button type="submit" class="form-submit">submit</button>
+      </form>
+    </div>
+  </body>
+
+</html>

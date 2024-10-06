@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20-Web-Projects-With-Vanilla-JavaScript</title>
+    <!-- google CDN fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- bootstrap icons CDN link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- the main styling  -->
+    <style>
+      /* main-color: #087f5b
+      Gray color: #343a40
+      */
+
+      html {
+        font-size: 62.25%
+      }
+      :root {
+        --main-color: #087f5b;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.8;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: : 3.2rem;
+      }
+
+      ul {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        /* gap: 1.8rem; */
+        max-height: 100vh;
+        min-height: 100vh;
+        justify-content: space-between;
+      }
+
+      .page-link{
+        transition: all 0.5s;
+      }
+
+      .page-link:link,
+      .page-link:visited{
+        color: var(--main-color);
+        padding: 25px;
+        background-color: #fff;
+        text-decoration: none;
+        text-transform: capitalize;
+        opacity: 0.5;
+        font-size: 1.8rem;
+      }
+
+      .page-link:hover,
+      .page-link:active {
+        padding: 50px;
+        /* border-bottom: 1px solid var(--main-color); */
+        /* background-color: var(--main-color);
+        color: #fff; */
+        letter-spacing: 3px;
+        opacity: 1;
+        font-size: 2.4rem
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li><a class="page-link" href="01-accordion.html">accordion</a></li>
+      <li><a class="page-link" href="02-carousel.html">carousel</a></li>
+      <li><a class="page-link" href="03-table.html">table</a></li>
+      <li><a class="page-link" href="04-pagination.html">pagination</a></li>
+      <li><a class="page-link" href="05-hero-section.html">hero section</a></li>
+      <li><a class="page-link" href="06-layout.html">web application layout</a></li>
+    </nav>
+  </body>
+
+</html>
