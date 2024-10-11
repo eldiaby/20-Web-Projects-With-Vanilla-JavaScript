@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <img src="img/money.png" alt="">
+    <h1 class="main-heading">Exchange Rate Calculator</h1>
+    <p class="main-description"> Choose the currency and the amounts to get the exchange rate</p>
+
+    <div class="container">
+      <div class="currency">
+        <!-- <label for="first-currency-country">Chouse a country</label> -->
+        <!-- <span style="color: red !important; display: inline; float: none;">*</span> -->
+
+        <select id="first-currency-country" name="country" class="form-control">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="JPY">JPY</option>
+          <option value="AUD">AUD</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="EGP" selected>EGP</option>
+
+
+        </select>
+        <!-- <label for="first-amount">Amount</label> -->
+        <input type="number" name="money" class="first-amount" id="first-amount" placeholder="0" value="1">
+      </div>
+      <div class="swap-rate-container">
+        <button type="button" class="btn btn-swap" id="rate">Swap</button>
+        <div class="rate" id="rate"></div>
+      </div>
+      <div class="currency">
+        <!-- <label for="second-currency-country">Chouse a country</label> -->
+        <!-- <span style="color: red !important; display: inline; float: none;">*</span> -->
+
+        <select id="second-currency-country" name="country" class="form-control">
+          <option value="USD" selected>USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="JPY">JPY</option>
+          <option value="AUD">AUD</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="EGP">EGP</option>
+
+
+        </select>
+        <!-- <label for="second-amount">Amount</label> -->
+        <input type="number" name="money" class="second-amount" id="second-amount" placeholder="0">
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  </body>
+
+</html>
