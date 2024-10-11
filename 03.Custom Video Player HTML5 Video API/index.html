@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player HTML5 Video API</title>
+    <link rel="stylesheet" href="css/progress.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" defer src="js/script.js"></script>
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <h1 class="main-heading">Custom vidoe player</h1>
+
+    <video src="videos/gone.mp4" poster="img/poster.png" class="screen"></video>
+    <div class="controlers">
+      <button title="play" class="btn play">
+        <i class="fa fa-play fa-2x "></i>
+      </button>
+      <button title="stop" class="btn stop">
+        <i class="fa fa-stop fa-2x"></i>
+      </button>
+      <input type="range" min="0" max="100" value="0" class="progress" step="0.1">
+      <span class="time-stamp">00:00</span>
+    </div>
+  </body>
+
+</html>
