@@ -110,10 +110,10 @@ const filterUsers = function () {
 // Calc entire money
 const calcEntireMoney = function () {
   mainContent.querySelectorAll('h3').forEach((ele) => ele.remove());
-  const total = users.reduce((acc, user) => (acc = acc + user.money), 0);
+  const total = users.reduce((acc, user) => (acc += user.money), 0);
   mainContent.insertAdjacentHTML(
     'beforeend',
-    `<h3><strong>Total</strong>${total}</ht>`
+    `<h3><strong>Total</strong>${formatMoney(total)}</ht>`
   );
 };
 

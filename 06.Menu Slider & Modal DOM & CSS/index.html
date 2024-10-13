@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Slider & Modal DOM & CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+
+    <!-- Font awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+  </head>
+
+  <body>
+    <nav class="nav">
+
+      <div class="user-image">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="user image" title="user image">
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-link"><a href="#">Home</a></li>
+        <li class="nav-link"><a href="#">About</a></li>
+        <li class="nav-link"><a href="#">Blog</a></li>
+        <li class="nav-link"><a href="#">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <button type="button" title="nav icon" class="nav-toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+
+      <h1 class="main-heading">My landing page</h1>
+
+      <p class="heading-descroption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <button class="cta-btn">Sign up</button>
+    </header>
+
+    <main class="container">
+      <h2>What is this landing page about?</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum voluptas dolor ipsam eveniet ab aut sint amet
+        autem quo animi?</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora autem dicta incidunt tenetur? Quo labore
+        veniam laborum ipsa. Amet iusto debitis reprehenderit fugiat culpa nihil quisquam perferendis adipisci harum
+        recusandae.</p>
+
+      <h2>Tell me more</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, quis! Quidem, earum sunt doloribus
+        blanditiis magnam exercitationem recusandae error adipisci fuga maxime soluta sint molestias similique minus
+        temporibus delectus ipsa.</p>
+
+      <h2>Benefits</h2>
+
+      <ul>
+        <li>Lifetime access</li>
+        <li>30 Day money back</li>
+        <li>tailored customer support</li>
+      </ul>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor delectus fuga enim saepe. Ex, similique impedit
+        sed ducimus quasi, illum numquam inventore vel nostrum iusto sint tempore voluptatem consequuntur mollitia
+        debitis? Ipsum debitis commodi, magni, officiis provident alias nesciunt saepe assumenda mollitia fugit aliquid
+        repellat obcaecati asperiores repudiandae voluptas enim ut dolor veniam esse incidunt qui eaque suscipit
+        doloribus. Dolorem recusandae, necessitatibus porro laudantium iste quis odit reprehenderit labore earum?</p>
+    </main>
+
+    <div class="modal-container">
+      <div class="modal">
+        <button class="close-btn">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3 class="modal-heading">Sign up</h3>
+        </div>
+        <div class="modal-content">
+          <p> Register with us to ger offers, support and more.</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" class="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" class="password" placeholder="Enter your password"
+                required>
+            </div>
+            <div>
+              <label for="repassword">Confirm password</label>
+              <input type="password" name="repassword" id="repassword" class="repassword"
+                placeholder="Confirm your password" required>
+            </div>
+            <input type="submit" value="submit" class="submit-btn">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+
+</html>
