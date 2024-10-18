@@ -64,7 +64,7 @@ const nextSong = function () {
 // Update progress bar in UI
 const updateProgressBar = function (e) {
   const { duration, currentTime } = e.srcElement;
-  progressBar.style.width = `${(currentTime / duration) * 100}px`;
+  progressBar.style.width = `${(currentTime / duration) * 100}%`;
 };
 
 // Set progress bar
@@ -72,7 +72,7 @@ const setProgress = function (e) {
   const width = this.clientWidth;
   const clickX = e.offsetX;
   const duration = audio.duration;
-  console.log((clickX / width) * duration);
+
   audio.currentTime = (clickX / width) * duration;
 };
 
