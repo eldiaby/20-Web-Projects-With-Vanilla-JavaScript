@@ -8,9 +8,54 @@
 
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
   </head>
 
   <body>
+    <button class="settings-btn" type="button">
+      <i class="fas fa-cog"></i>
+    </button>
+
+    <div class="settings">
+      <form class="settings-form">
+        <div>
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="game-container">
+      <h1>
+        <i class="fas fa-keyboard"></i>
+        Speed Typer
+        <i class="fas fa-keyboard"></i>
+      </h1>
+      <small>Type the following:</small>
+
+      <h2 class="game-word"></h2>
+
+      <input type="text" class="user-input" autocomplete="off" placeholder="Type the word here...">
+
+      <p class="time-container">
+        Time lerf: <span class="time"></span>
+      </p>
+
+      <p class="score-container">
+        score: <span class="score">0</span>
+      </p>
+      <div class="end-game-container"></div>
+    </div>
+
+
 
   </body>
 
