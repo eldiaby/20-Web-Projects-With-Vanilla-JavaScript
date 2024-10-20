@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Text Reader Speech Synthesis</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/query.css">
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="main-heading">Speech text reader</h1>
+      <button type="button" class="btn btn--toggle">Toggle</button>
+      <div class="text-box">
+        <div class="text-box-close-btn">X</div>
+        <label for="voices-select">
+          <h2>Select voice</h2>
+        </label>
+        <select class="voices-select" id="voices-select" name="Select voice"> </select>
+        <textarea class="text-area" placeholder="Enter text to read..."></textarea>
+        <button type="button" class="btn btn--read">Read text</button>
+      </div>
+    </div>
+    <main class="main-page-content"></main>
+  </body>
+
+</html>

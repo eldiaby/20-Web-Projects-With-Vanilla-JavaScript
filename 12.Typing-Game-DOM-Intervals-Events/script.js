@@ -92,7 +92,7 @@ const setDificullty = function (difficulty) {
   difficulty === 'hard'
     ? (time = 20)
     : difficulty === 'medium'
-    ? (time = 30)
+    ? (time = 40)
     : (time = 60);
   gameDifficultySelect.value = difficulty =
     localStorage.getItem('difficulty') || 'easy';
@@ -115,6 +115,7 @@ userInput.addEventListener('input', (e) => {
 
     // Update timing
     time += time;
+    console.log(time);
   }
 });
 

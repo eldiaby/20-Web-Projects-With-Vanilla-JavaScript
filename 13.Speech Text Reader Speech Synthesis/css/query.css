@@ -1,0 +1,19 @@
+/* 1100px */
+@media screen and (max-width: 69em) {
+  .main-page-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 760px */
+@media screen and (max-width: 47.5em) {
+  .main-page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* 500px */
+@media screen and (max-width: 31.25em) {
+  .main-page-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
