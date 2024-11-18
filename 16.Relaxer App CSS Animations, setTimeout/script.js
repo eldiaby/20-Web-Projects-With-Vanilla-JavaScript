@@ -26,7 +26,7 @@ const breatheAnimation = function () {
     }, holdTime);
   }, breatheTime);
 };
-
+breatheAnimation();
 setInterval(breatheAnimation, totalTime);
 
 // =============================================================//
